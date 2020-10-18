@@ -2,7 +2,7 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Web-Design-Challenge</title>
+  <title>Latitude</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" type="image/png" href="./Visualizations/favicon-32x32.png">
 </head>
@@ -10,6 +10,22 @@
 <body>
   <header>
     <h1>Latitude</h1>
+    <div class="navbar">
+      <div class="dropdown">
+      <button class="dropbtn"
+    onclick="myFunction()"> Plots
+        <i class="fa fa-caret"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="maxtemp.html">Max Temperature</a>
+        <a href="humidity.html">Humidity</a>
+        <a href="cloudiness.html">Cloudiness</a>
+        <a href="windspeed.html">Wind Speed</a>
+      </div>
+      </div> 
+      <a href="data.html">Comparison</a>
+      <a href="comparisons.html">Data</a>
+    </div>
   </header>
 
   <main class="container">
@@ -27,10 +43,10 @@
       <h2>Visualizations</h2>
       <hr>
       <p>This section will have the four preview images linked to the visualization page</p>
-      <li> <a href="visualization1.html">visualization1</a></li>
-      <li> <a href="visualization2.html">visualization2</a></li>
-      <li> <a href="visualization3.html">visualization3</a></li>
-      <li> <a href="visualization4.html">visualization4</a></li>
+      <li> <a href="./Visualizations/scatter1.png">Max Temp</a></li>
+      <li> <a href="./Visualizations/scatter2.png">Humidity</a></li>
+      <li> <a href="./Visualizations/scatter3.png">Cloudiness</a></li>
+      <li> <a href="./Visualizations/scatter4.png">Wind Speed</a></li>
     </aside>
   </main>
 

@@ -2,69 +2,52 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
-  <title>Activity 1: Basic HTML Bio</title>
+  <title>Latitude</title>
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="shortcut icon" type="image/png" href="./Visualizations/favicon-32x32.png">
 </head>
 
 <body>
-    <header>
-        <title>
-            <h1>
-              Visualization 2
-            </h1>
-        </title>
-        <nav>
-          <!-- Add to the other pages to link to each other -->
-          <ul>
-            <li> <a href="index.html">Project_description</a></li>
-            <li> <a href="vis">visualization1</a></li>
-            <li> <a href="humidiy.html">visualization2</a></li>
-            <li> <a href="visualization3.html">visualization3</a></li>
-            <li> <a href="visualization4.html">visualization4</a></li>
-            <li> <a href="comparisons.html">Data_comparisons</a></li>
-            <li> <a href="data.html">Final_Data</a></li>
-          </ul>
-        </nav>
-    </header>
+  <header>
+    <h1>Latitude</h1>
+      <a href="index.html">Latitude</a>
+    <div class="navbar">
+      <div class="dropdown">
+      <button class="dropbtn"
+    onclick="myFunction()"> Plots
+        <i class="fa fa-caret"></i>
+      </button>
+      <div class="dropdown-content" id="myDropdown">
+        <a href="maxtemp.html">Max Temperature</a>
+        <a href="humidity.html">Humidity</a>
+        <a href="cloudiness.html">Cloudiness</a>
+        <a href="windspeed.html">Wind Speed</a>
+      </div>
+      </div> 
+      <a href="data.html">Comparison</a>
+      <a href="comparisons.html">Data</a>
+    </div>
+  </header>
 
-  <h1>Your Name</h1>
-
-  <img src="https://placehold.it/200x200" alt="Your Name">
-
-  <p>Write a short paragraph about yourself or some placeholder text.</p>
-  <p>A second short paragraph about yourself or some placeholder text.</p>
-
-  <ul>
-    <li><strong>Email:</strong> <a href="#">someplace@gmail.com</a></li>
-    <li><strong>Github:</strong> <a href="#">sampleName</a></li>
-    <li><strong>Twitter:</strong> <a href="#">coming soon</a></li>
-  </ul>
-
-  <table>
-    <tr>
-      <th>Books</th>
-      <th>Movies</th>
-      <th>Games</th>
-    </tr>
-    <tr>
-      <td>The Hobbit</td>
-      <td>Hot Fuzz</td>
-      <td>Dark Souls</td>
-    </tr>
-    <tr>
-      <td>The Name of the Wind</td>
-      <td>The Avengers</td>
-      <td>The Last of Us</td>
-    </tr>
-    <tr>
-      <td>The Girl With All the Gifts</td>
-      <td>The Matrix</td>
-      <td>Dragon Age: Origins</td>
-    </tr>
-  </table>
-
-  <!-- Bonus link to last class page -->
-  <a href="../../../../1/Activities/04-Stu_MyFirst_HTML/Solved/my-first-bonus.html">My First HTML Bonus</a>
+  <main class="container">
+    <section id="main-bio">
+      <section id="figure">
+        <h2 id="bio-name">Humidity</h2>
+        <hr>
+        <img id="bio-image" src="./Visualizations/scatter2.png" alt="Scatter plot 1 City vs. Max Temp">
+      </section>
+      <p>Humidity percentage increases as move closer to the equator.  This is caused by the build up of water vapor in the air.  Locations near the equator are mostly surrounded by water, such as islands.   </p>
+    </section>
+    <aside id="contact-info">
+      <h2>Visualizations</h2>
+      <hr>
+      <p>This section will have the four preview images linked to the visualization page</p>
+      <li> <a href="./Visualizations/scatter1.png">Max Temp</a></li>
+      <li> <a href="./Visualizations/scatter2.png">Humidity</a></li>
+      <li> <a href="./Visualizations/scatter3.png">Cloudiness</a></li>
+      <li> <a href="./Visualizations/scatter4.png">Wind Speed</a></li>
+    </aside>
+  </main>
 
 </body>
 

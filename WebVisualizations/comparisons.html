@@ -5,42 +5,52 @@
   <title>Latitude</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="shortcut icon" type="image/png" href="./Visualizations/favicon-32x32.png">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 
 <body>
-  <header>
-    <h1>Latitude</h1>
-      <a href="index.html">Latitude</a>
-    <div class="navbar">
-      <div class="dropdown">
-      <button class="dropbtn"
-    onclick="myFunction()"> Plots
-        <i class="fa fa-caret"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="maxtemp.html">Max Temperature</a>
-        <a href="humidity.html">Humidity</a>
-        <a href="cloudiness.html">Cloudiness</a>
-        <a href="windspeed.html">Wind Speed</a>
-      </div>
-      </div> 
-      <a href="data.html">Comparison</a>
-      <a href="comparisons.html">Data</a>
-    </div>
-  </header>
+  <!-- Creates the Overall Grid -->
+  <div class="container">
 
-  <main class="container">
-    <section id="main-bio">
-      <section id="figure">
-        <h2 id="bio-name">Comparison: Latitude vs. X</h2>
-        <p>Click any plot to get an in-depth analysis.</p>
-        <hr>
-        <img id="bio-image" src="./Visualizations/scatter2.png" alt="Latitude vs. Humidity">
-      </section>
-    </section>
-   
-  </main>
+    <!-- Row 1 -->
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Header</h1>
+      </div>
+    </div>
+
+    <!-- Row 4 -->
+    <div class="row">
+      <div class="col-md-6">
+        <h3>vs. Max Temperature</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo voluptates blanditiis nisi! Ullam dolore aspernatur, ratione error similique veniam iusto, labore repellat eaque nostrum optio doloribus illo nihil dolor?</p>
+      </div>
+      <div class="col-md-6">
+        <h3>vs. Humidity</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <h3>vs. Cloudiness</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti illo voluptates blanditiis nisi! Ullam dolore aspernatur, ratione error similique veniam iusto, labore repellat eaque nostrum optio doloribus illo nihil dolor?</p>
+      </div>
+      <div class="col-md-6">
+        <h3>vs. Wind Speed</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi sequi ex quam quia iste, nemo molestias dolor, qui dolorem voluptatibus ipsa maxime voluptas et deserunt porro repellendus veritatis nesciunt quisquam.</p>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
+
+ 
 
 </html>

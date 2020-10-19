@@ -45,13 +45,13 @@
   }
   
   .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
-    background-color:#43AFA0;
+    background-color: lightgray;
   }
   
   .dropdown-content {
     display: list-item;
     position: absolute;
-    background-color: black;
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(231, 223, 223, 0.2);
     z-index: 1;
@@ -59,7 +59,7 @@
   
   .dropdown-content a {
     float: none;
-    color: white;
+    color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -67,7 +67,7 @@
   }
   
   .dropdown-content a:hover {
-    background-color: black;
+    background-color: lightgray;
   }
   
   .show {

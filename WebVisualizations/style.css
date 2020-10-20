@@ -12,6 +12,7 @@
  header {
     background: white; 
   }
+
   .navbar {
     padding: 20px;
     overflow: hidden;
@@ -19,6 +20,12 @@
     font-family: Arial, Helvetica, sans-serif;
   }
   
+  .logo{
+    width: 2px; height: 90px;
+    float: left;
+    
+ }
+
   .dropdown {
     float: right;
     overflow: hidden;
@@ -31,6 +38,7 @@
     padding: 10px 50px;
     text-decoration: none;
   }
+
 
   .dropdown .dropbtn {
     cursor: pointer;

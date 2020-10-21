@@ -2,32 +2,63 @@
 <html lang="en-us">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Latitude</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="shortcut icon" type="image/png" href="./Visualizations/favicon-32x32.png">
+  <!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="style1.css"> -->
+  <link rel="shortcut icon" type="image/png" href="./Visualizations/favicon-32x32.png"> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+<style>
+  body{
+    margin: 0px 0px;
+    padding: 0px 0px 10px 0px;
+    background: lightgray;
+  }
+  .navbar-brand{
+    margin: 0px 10px -13px 10px;
+  }
+  .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+    background-color: lightgray;
+  }
+
+</style>
 
 <body>
-  <header>
-    <h1>Latitude</h1>
-      <a href="index.html">Latitude</a>
-    <div class="navbar">
-      <div class="dropdown">
-      <button class="dropbtn"
-    onclick="myFunction()"> Plots
-        <i class="fa fa-caret"></i>
-      </button>
-      <div class="dropdown-content" id="myDropdown">
-        <a href="maxtemp.html">Max Temperature</a>
-        <a href="humidity.html">Humidity</a>
-        <a href="cloudiness.html">Cloudiness</a>
-        <a href="windspeed.html">Wind Speed</a>
-      </div>
-      </div> 
-      <a href="comparisons.html">Comparison</a>
-      <a href="data.html">Data</a>
+
+<nav class="navbar navbar-expand-sm bg-white navbar-black">
+  <a class="navbar-brand" href="index.html">
+    <img src="./Visualizations/latitudelogo.png" alt="logo" style="width:160px;"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto mb-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
     </div>
-  </header>
+  </nav>
+
 
   <main class="container">
     <section id="main-bio">

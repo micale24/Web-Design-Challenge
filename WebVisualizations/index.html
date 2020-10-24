@@ -19,7 +19,6 @@
   .dropbtn:focus {
     background-color: lightgray;
   }
-
   body {
     background: #D3D3D3;
     margin: 0px 0px 10px 0px;
@@ -46,10 +45,14 @@
     color: lightseagreen;
     text-align: center;
   }
+  #description-image {
+  float: left;
+  width: 270px;
+  height: 300px;
+}
 </style>
 
 <body>
-
   <nav class="navbar navbar-expand-sm bg-white navbar-black">
     <a class="navbar-brand" href="index.html">
       <img src="./Visualizations/latitudelogo.png" alt="logo" style="width:160px;"></a>
@@ -88,9 +91,8 @@
         <section class="fakeimg">
           <h1>Summary: Latitude vs. X</h1>
           <hr>
-
-          <section id="figure">
-            <img id="scatter1" src="./Visualizations/scatter1.png" alt="Latitude vs. Max Temp">
+          <section id="description-image">
+            <img id="description-image" src="./Visualizations/scatter1.png" alt="Latitude vs. Max Temp">
           </section>
           <p>The purpose of this project was to analyze how weather changes as you get close to the equator. To
             accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a data on over 500
@@ -100,8 +102,7 @@
             source data and visualizations created as part of the analysis, as well as explanations and descriptions
             of
             any trends and correlations witnessed.</p>
-          
-          </section>
+        </section>
       </div>
 
 
@@ -125,7 +126,8 @@
 
         </div>
       </div>
-
+    </div>
+  </div>
 
 </body>
 

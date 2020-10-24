@@ -14,19 +14,20 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <style>
-  body {
-    background: lightgray;
-  }
-
-  .navbar-brand {
-    margin: 0px 10px -13px 10px;
-  }
-
   .navbar a:hover,
   .dropdown:hover .dropbtn,
   .dropbtn:focus {
     background-color: lightgray;
   }
+  body {
+    background: lightgray;
+  }
+
+  /* .navbar-brand {
+    margin: 0px 10px -13px 10px;
+  } */
+
+  
   #navbarDropdownMenuLink{
     color: black;
   }
@@ -35,7 +36,7 @@
   }
   h1{
     color: lightseagreen;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
   }
   .fakeimg{
     background-color: white;
@@ -53,63 +54,70 @@
 </style>
 
 <body>
+
+
   <nav class="navbar navbar-expand-sm bg-white navbar-black">
     <a class="navbar-brand" href="index.html">
       <img src="./Visualizations/latitudelogo.png" alt="logo" style="width:160px;"></a>
-  
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav ml-auto mb-0">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plots
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
-              <a class="dropdown-item" href="humidity.html">Humidity</a>
-              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
-              <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="comparisons.html">Comparisons</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="data.html">Data</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
 
-    <div class="col-md-4">
-      <div class="fakeimg">
-        <h1 class="visuals">Comparisons: Latitude vs. X</h1>
-        <hr>
-        <div class="visImages">
-          
-          
-          <a class="maxtemp" href="comparisons.html">
-            <h3> vs. Max Temperature</h3>
-            <img src="./Visualizations/scatter1.png" alt="max temp" style="width:300px;"></a>
-          
-          
-          <a class="humidity" href="comparisons.html">
-            <h3> vs. Humidity</h3>
-            <img src="./Visualizations/scatter2.png" alt="humidity" style="width:300px;"></a>
-
-          <a class="cloudiness" href="comparisons.html">
-            <h3> vs. Cloudiness</h3>
-            <img src="./Visualizations/scatter3.png" alt="cloudiness" style="width:300px;"></a>
-
-          <a class="windspeed" href="comparisons.html">
-            <h3> vs. Wind Speed</h3>
-            <img src="./Visualizations/scatter4.png" alt="windspeed" style="width:300px;"></a>
-        </div>
-
-      </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Plots
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+            <a class="dropdown-item" href="humidity.html">Humidity</a>
+            <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+            <a class="dropdown-item" href="windspeed.html">Wind Speed</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="comparisons.html">Comparisons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="data.html">Data</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+
+  <div class="col-md-4">
+    <div class="fakeimg">
+      <h1 class="visuals">Comparisons: Latitude vs. X</h1>
+      <hr>
+      <div class="visImages">
+
+        <a class="maxtemp" href="comparisons.html">
+          <h3> vs. Max Temperature</h3>
+          <img src="./Visualizations/scatter1.png" alt="max temp" style="width:300px;">
+        </a>
+
+
+        <a class="humidity" href="comparisons.html">
+          <h3> vs. Humidity</h3>
+          <img src="./Visualizations/scatter2.png" alt="humidity" style="width:300px;">
+        </a>
+
+        <a class="cloudiness" href="comparisons.html">
+          <h3> vs. Cloudiness</h3>
+          <img src="./Visualizations/scatter3.png" alt="cloudiness" style="width:300px;">
+        </a>
+
+        <a class="windspeed" href="comparisons.html">
+          <h3> vs. Wind Speed</h3>
+          <img src="./Visualizations/scatter4.png" alt="windspeed" style="width:300px;">
+        </a>
+      </div>
+
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
